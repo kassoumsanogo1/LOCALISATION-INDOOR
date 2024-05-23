@@ -1,0 +1,24 @@
+{
+  "team": "Development Team",
+  "members": [
+    {"name": "SANOGO KASSOUM", "role": "Expert AI and Embedded Systems"},
+    {"name": "LIHOULA CAREL", "role": "Expert Software Developer"}
+  ],
+  "supervisors" : [
+    {"name" : "BACHAR EL HASSAN", "role" : "Project Director"},
+    {"name" : "MEYSAM SHAMSI", "role": "Jury"}
+  ],
+  "technologies": [
+    "LoRaWan",
+    "Arduino MKR WAN1300",
+    "Gateway LoRa",
+    "The Things Networks TTN",
+    "Mystral AI",
+    "PHP",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "MySQL"
+  ],
+  "project": "Indoor Localisation with Real-Time RSSI"
+}
