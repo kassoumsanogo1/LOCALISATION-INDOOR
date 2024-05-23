@@ -1,7 +1,13 @@
 [
-    {"timestamp": "2024-05-19T12:03:00Z",
-    "rssi": -17},
-    {"timestamp": "2024-05-19T12:01:00Z", 
-    "rssi": -13}
+    {"timestamp": "2024-05-19T12:00:00Z", "gateway1": -90, "gateway2": -90, "gateway3": -100},
+    {"timestamp": "2024-05-19T12:01:00Z", "gateway1": -50, "gateway2": -30, "gateway3": -80},
+    {"timestamp": "2024-05-19T12:02:00Z", "gateway1": -80, "gateway2": -90, "gateway3": -20},
+    {"timestamp": "2024-05-19T12:03:00Z", "gateway1": -60, "gateway2": -20, "gateway3": -70},
+    {"timestamp": "2024-05-19T12:04:00Z", "gateway1": -40, "gateway2": -50, "gateway3": -50},
+    {"timestamp": "2024-05-19T12:05:00Z", "gateway1": -70, "gateway2": -10, "gateway3": -60},
+    {"timestamp": "2024-05-19T12:06:00Z", "gateway1": -50, "gateway2": -30, "gateway3": -80},
+    {"timestamp": "2024-05-19T12:07:00Z", "gateway1": -20, "gateway2": -60, "gateway3": -90},
+    {"timestamp": "2024-05-19T12:08:00Z", "gateway1": -10, "gateway2": -70, "gateway3": -100},
+    {"timestamp": "2024-05-19T12:08:00Z", "gateway1": -10, "gateway2": -70, "gateway3": -10}
 
 ]
