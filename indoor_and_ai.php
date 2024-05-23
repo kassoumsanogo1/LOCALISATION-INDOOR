@@ -70,7 +70,7 @@
     function rssiToDistance(rssi, rssi0 = -40) {
         return Math.pow(10, (rssi0 - rssi) / 20);
     }
-    function trilaterate(g1, g2, g3) {
+    function triangulation(g1, g2, g3) {
         const d1 = rssiToDistance(g1.rssi);
         const d2 = rssiToDistance(g2.rssi);
         const d3 = rssiToDistance(g3.rssi);
@@ -127,7 +127,7 @@
                 var g1 = { rssi: entry.gateway1, x: 0, y: 0  };
                 var g2 = { rssi: entry.gateway2, x: 0, y: 900 };
                 var g3 = { rssi: entry.gateway3, x: 1500 , y: 900 }; // Passerelle 3 en bas à droite
-                var coordinates = trilaterate(g1, g2, g3);
+                var coordinates = triangulation(g1, g2, g3);
                 updateMarkerPosition(coordinates.x, coordinates.y);
                 index = (index + 1) % data.length; // Incrémenter et revenir au début après la dernière valeur
             }
