@@ -111,7 +111,7 @@
     </div>
 
     <div class="team-member">
-        <img src="https://i.ibb.co/L9JMNP8/Photoroom-20240523-113158.jpg" alt="Photo de Marie Durant">
+        <img src="https://i.ibb.co/3p5WsjW/Photoroom-20240525-202240.jpg" alt="Photo de Marie Durant">
         <h2>Lihoula Carel</h2>
         <p><strong>Expert Software Engineering</strong></p>
         <p>Elève Ingénieur en Cycle Ingénieur option Informatique en spécialité Interaction Personne Système IPS à ENSIM Ecole d'Ingénieur</p>
