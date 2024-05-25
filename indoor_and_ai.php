@@ -129,14 +129,14 @@
         function loop() {
             if (data.length > 0) {
                 var entry = data[index];
-                var g1 = { rssi: entry.gateway1, x: 0, y: 0  };
-                var g2 = { rssi: entry.gateway2, x: 0, y: 300 };
+                var g1 = { rssi: entry.gateway1, x: 0, y: 0  }; // Passerelle 1 en bas à gauche
+                var g2 = { rssi: entry.gateway2, x: 0, y: 300 }; // passerelle 2 en haut au milieu
                 var g3 = { rssi: entry.gateway3, x: 1500 , y: 900 }; // Passerelle 3 en bas à droite
                 var coordinates = triangulation(g1, g2, g3);
                 updateMarkerPosition(coordinates.x, coordinates.y);
                 index = (index + 1) % data.length; // Incrémenter et revenir au début après la dernière valeur
             }
-            setTimeout(loop, 500); // Mettre à jour toutes les 1 secondes
+            setTimeout(loop, 500); // Mettre à jour toutes les 1/2 secondes
         }
         loop();
     }
