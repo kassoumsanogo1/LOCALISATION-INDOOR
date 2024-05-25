@@ -55,6 +55,13 @@
             });
     });
 
+    document.getElementById('question').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Empêche le comportement par défaut
+            document.getElementById('send-button').click(); // Déclenche le clic sur le bouton "Envoyer"
+        }
+    });
+
     function displayMessage(sender, text) {
         var messageContainer = document.createElement('div');
         messageContainer.classList.add('message', sender);
@@ -67,7 +74,7 @@
     }
 
 
-    function rssiToDistance(rssi, rssi0 = -40) {
+    function rssiToDistance(rssi, rssi0 = -30) {
         return Math.pow(10, (rssi0 - rssi) / 20);
     }
     function triangulation(g1, g2, g3) {
@@ -125,13 +132,13 @@
             if (data.length > 0) {
                 var entry = data[index];
                 var g1 = { rssi: entry.gateway1, x: 0, y: 0  };
-                var g2 = { rssi: entry.gateway2, x: 0, y: 900 };
+                var g2 = { rssi: entry.gateway2, x: 0, y: 300 };
                 var g3 = { rssi: entry.gateway3, x: 1500 , y: 900 }; // Passerelle 3 en bas à droite
                 var coordinates = triangulation(g1, g2, g3);
                 updateMarkerPosition(coordinates.x, coordinates.y);
                 index = (index + 1) % data.length; // Incrémenter et revenir au début après la dernière valeur
             }
-            setTimeout(loop, 1000); // Mettre à jour toutes les 2 secondes
+            setTimeout(loop, 500); // Mettre à jour toutes les 1 secondes
         }
         loop();
     }
