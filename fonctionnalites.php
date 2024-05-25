@@ -138,7 +138,7 @@
 
     <section class="expert-reviews">
         <h2>Avis d'Experts</h2>
-        <p>Les experts conviennent que notre solution de localisation indoor est une avancée majeure dans la gestion des espaces intérieurs, offrant des niveaux de précision et de fiabilité sans précédent grâce à l'intégration de technologies avancées.</p>
+        <p>Les experts (les camarades) conviennent que notre solution de localisation indoor est une avancée majeure dans la gestion des espaces intérieurs, offrant des niveaux de précision et de fiabilité sans précédent grâce à l'intégration de technologies avancées.</p>
     </section>
 
     <div class="image">

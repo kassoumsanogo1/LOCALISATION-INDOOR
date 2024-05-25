@@ -79,6 +79,11 @@ body {
     padding: 10px 15px;
     border-radius: 20px;
     cursor: pointer;
+    background-image: url('https://i.ibb.co/JB68Q25/friends-link-send-share-icon-123609.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    padding-right: 35px; /* Ajouter un espace pour l'image */
 }
 #send-button:hover {
     background-color: #0056b3;
