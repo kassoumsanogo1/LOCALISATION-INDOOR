@@ -2,7 +2,7 @@
 
 function callHuggingFaceApi($data) {
     $apiUrl = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2";
-    $apiKey = "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"; // Remplacez par votre clé API Hugging Face
+    $apiKey = "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"; // Remplacez par votre clé API Hugging Face
 
     $ch = curl_init();
 
